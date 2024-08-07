@@ -141,3 +141,8 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'esangays21fe@gmail.com'
 EMAIL_HOST_PASSWORD = 'zsbu lnlm zxkf xxva'
 EMAIL_PORT = 587
+
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+    'allauth.account.auth_backends.AuthenticationBackend',
+]
