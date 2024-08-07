@@ -6,8 +6,8 @@ from rest_framework import status
 
 
 class HelloWorldView(APIView):
-    authentication_classes = [TokenAuthentication]
-    permission_classes = [IsAuthenticated]
+    # authentication_classes = [TokenAuthentication]
+    # permission_classes = [IsAuthenticated]
 
     def get(self, request):
         return Response("Hola mundo!", status=status.HTTP_200_OK)
